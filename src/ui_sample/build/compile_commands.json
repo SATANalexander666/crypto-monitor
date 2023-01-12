@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/axr/prog/projects/OOP/src/ui_sample/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/axr/prog/projects/OOP/src/ui_sample/build/app_autogen/include -I/home/axr/prog/projects/OOP/src/ui_sample/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -fPIC -std=gnu++17 -o CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.o -c /home/axr/prog/projects/OOP/src/ui_sample/build/app_autogen/mocs_compilation.cpp",
+  "file": "/home/axr/prog/projects/OOP/src/ui_sample/build/app_autogen/mocs_compilation.cpp"
+},
+{
+  "directory": "/home/axr/prog/projects/OOP/src/ui_sample/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/axr/prog/projects/OOP/src/ui_sample/build/app_autogen/include -I/home/axr/prog/projects/OOP/src/ui_sample/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -fPIC -std=gnu++17 -o CMakeFiles/app.dir/main.cpp.o -c /home/axr/prog/projects/OOP/src/ui_sample/main.cpp",
+  "file": "/home/axr/prog/projects/OOP/src/ui_sample/main.cpp"
+},
+{
+  "directory": "/home/axr/prog/projects/OOP/src/ui_sample/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/axr/prog/projects/OOP/src/ui_sample/build/app_autogen/include -I/home/axr/prog/projects/OOP/src/ui_sample/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -fPIC -std=gnu++17 -o CMakeFiles/app.dir/src/MainWindow.cpp.o -c /home/axr/prog/projects/OOP/src/ui_sample/src/MainWindow.cpp",
+  "file": "/home/axr/prog/projects/OOP/src/ui_sample/src/MainWindow.cpp"
+}
+]
