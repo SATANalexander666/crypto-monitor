@@ -15,11 +15,14 @@ add_executable(app main.cpp
     src/Dispenser.cpp include/Dispenser.hpp
     src/Parser.cpp include/Parser.hpp
     src/Reader.cpp include/Reader.hpp
+
+    src/Reciever.cpp include/Reciever.hpp
 )
 
 target_include_directories(app PRIVATE include)
 
 target_link_libraries(app PRIVATE Qt6::Widgets)
+target_link_libraries(app PRIVATE zmq)
 
 
 set_target_properties(app PROPERTIES

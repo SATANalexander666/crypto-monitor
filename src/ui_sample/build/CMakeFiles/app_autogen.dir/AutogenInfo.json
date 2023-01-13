@@ -383,6 +383,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/axr/prog/projects/crypto-monitor/src/ui_sample/include/Dispenser.hpp",
+			"MU",
+			"6YEA5652QU/moc_Dispenser.cpp",
+			null
+		],
+		[
 			"/home/axr/prog/projects/crypto-monitor/src/ui_sample/include/MainWindow.hpp",
 			"MU",
 			"6YEA5652QU/moc_MainWindow.cpp",
@@ -398,6 +404,12 @@
 			"/home/axr/prog/projects/crypto-monitor/src/ui_sample/include/Reader.hpp",
 			"MU",
 			"6YEA5652QU/moc_Reader.cpp",
+			null
+		],
+		[
+			"/home/axr/prog/projects/crypto-monitor/src/ui_sample/include/Reciever.hpp",
+			"MU",
+			"6YEA5652QU/moc_Reciever.cpp",
 			null
 		]
 	],
@@ -465,6 +477,11 @@
 			null
 		],
 		[
+			"/home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Dispenser.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/axr/prog/projects/crypto-monitor/src/ui_sample/src/MainWindow.cpp",
 			"MU",
 			null
@@ -476,6 +493,11 @@
 		],
 		[
 			"/home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Reader.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Reciever.cpp",
 			"MU",
 			null
 		]

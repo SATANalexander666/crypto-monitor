@@ -2,9 +2,11 @@
 
 #include <QApplication>
 
+#include "Reciever.hpp"
+
 int main(int argc, char* argv[])
 {
-    QApplication app(argc, argv);
+    /*QApplication app(argc, argv);
 
     MainWindow window;
 
@@ -13,6 +15,10 @@ int main(int argc, char* argv[])
 
     window.show();
 
-    return app.exec();
+    return app.exec();*/
+
+    GetMessage();
+
+    return 0;
 }
 

@@ -905,4 +905,5 @@ CMakeFiles/app.dir/main.cpp.o: \
  /usr/include/qt6/QtWidgets/qwizard.h \
  /usr/include/qt6/QtWidgets/qtwidgetsversion.h \
  /usr/include/qt6/QtWidgets/QMainWindow \
- /usr/include/qt6/QtWidgets/QApplication
+ /usr/include/qt6/QtWidgets/QApplication \
+ /home/axr/prog/projects/crypto-monitor/src/ui_sample/include/Reciever.hpp

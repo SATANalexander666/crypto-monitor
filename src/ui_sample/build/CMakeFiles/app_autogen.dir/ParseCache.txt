@@ -898,4 +898,8 @@
 /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/MainWindow.cpp
 /home/axr/prog/projects/crypto-monitor/src/ui_sample/main.cpp
 /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Parser.cpp
+/home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Dispenser.cpp
+/home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Reciever.cpp
 /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Reader.cpp
+/home/axr/prog/projects/crypto-monitor/src/ui_sample/include/Reciever.hpp
+/home/axr/prog/projects/crypto-monitor/src/ui_sample/include/Dispenser.hpp

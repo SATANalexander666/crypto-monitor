@@ -16,6 +16,11 @@
 },
 {
   "directory": "/home/axr/prog/projects/crypto-monitor/src/ui_sample/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/axr/prog/projects/crypto-monitor/src/ui_sample/build/app_autogen/include -I/home/axr/prog/projects/crypto-monitor/src/ui_sample/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -fPIC -std=gnu++17 -o CMakeFiles/app.dir/src/Dispenser.cpp.o -c /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Dispenser.cpp",
+  "file": "/home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Dispenser.cpp"
+},
+{
+  "directory": "/home/axr/prog/projects/crypto-monitor/src/ui_sample/build",
   "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/axr/prog/projects/crypto-monitor/src/ui_sample/build/app_autogen/include -I/home/axr/prog/projects/crypto-monitor/src/ui_sample/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -fPIC -std=gnu++17 -o CMakeFiles/app.dir/src/Parser.cpp.o -c /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Parser.cpp",
   "file": "/home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Parser.cpp"
 },
@@ -23,5 +28,10 @@
   "directory": "/home/axr/prog/projects/crypto-monitor/src/ui_sample/build",
   "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/axr/prog/projects/crypto-monitor/src/ui_sample/build/app_autogen/include -I/home/axr/prog/projects/crypto-monitor/src/ui_sample/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -fPIC -std=gnu++17 -o CMakeFiles/app.dir/src/Reader.cpp.o -c /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Reader.cpp",
   "file": "/home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Reader.cpp"
+},
+{
+  "directory": "/home/axr/prog/projects/crypto-monitor/src/ui_sample/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/axr/prog/projects/crypto-monitor/src/ui_sample/build/app_autogen/include -I/home/axr/prog/projects/crypto-monitor/src/ui_sample/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -fPIC -std=gnu++17 -o CMakeFiles/app.dir/src/Reciever.cpp.o -c /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Reciever.cpp",
+  "file": "/home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Reciever.cpp"
 }
 ]

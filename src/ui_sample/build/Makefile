@@ -190,6 +190,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Dispenser.o: src/Dispenser.cpp.o
+.PHONY : src/Dispenser.o
+
+# target to build an object file
+src/Dispenser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Dispenser.cpp.o
+.PHONY : src/Dispenser.cpp.o
+
+src/Dispenser.i: src/Dispenser.cpp.i
+.PHONY : src/Dispenser.i
+
+# target to preprocess a source file
+src/Dispenser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Dispenser.cpp.i
+.PHONY : src/Dispenser.cpp.i
+
+src/Dispenser.s: src/Dispenser.cpp.s
+.PHONY : src/Dispenser.s
+
+# target to generate assembly for a file
+src/Dispenser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Dispenser.cpp.s
+.PHONY : src/Dispenser.cpp.s
+
 src/MainWindow.o: src/MainWindow.cpp.o
 .PHONY : src/MainWindow.o
 
@@ -262,6 +286,30 @@ src/Reader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Reader.cpp.s
 .PHONY : src/Reader.cpp.s
 
+src/Reciever.o: src/Reciever.cpp.o
+.PHONY : src/Reciever.o
+
+# target to build an object file
+src/Reciever.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Reciever.cpp.o
+.PHONY : src/Reciever.cpp.o
+
+src/Reciever.i: src/Reciever.cpp.i
+.PHONY : src/Reciever.i
+
+# target to preprocess a source file
+src/Reciever.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Reciever.cpp.i
+.PHONY : src/Reciever.cpp.i
+
+src/Reciever.s: src/Reciever.cpp.s
+.PHONY : src/Reciever.s
+
+# target to generate assembly for a file
+src/Reciever.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Reciever.cpp.s
+.PHONY : src/Reciever.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -278,6 +326,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/Dispenser.o"
+	@echo "... src/Dispenser.i"
+	@echo "... src/Dispenser.s"
 	@echo "... src/MainWindow.o"
 	@echo "... src/MainWindow.i"
 	@echo "... src/MainWindow.s"
@@ -287,6 +338,9 @@ help:
 	@echo "... src/Reader.o"
 	@echo "... src/Reader.i"
 	@echo "... src/Reader.s"
+	@echo "... src/Reciever.o"
+	@echo "... src/Reciever.i"
+	@echo "... src/Reciever.s"
 .PHONY : help
 
 
