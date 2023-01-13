@@ -1,17 +1,17 @@
 #ifndef PARSER_HPP
 #define PARSER_HPP
 
-#include "Reader.hpp"
+#include "Reciever.hpp"
 
 #include <string>
 #include <queue>
 #include <sstream>
 
 
-class Parser : protected Reader
+class TParser : protected TReciever
 {
     public:
-        Parser(std::string &path);
+        TParser(std::string &path);
         std::pair<std::string, std::string> Get();
 
     private:

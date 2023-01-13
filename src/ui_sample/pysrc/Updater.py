@@ -4,23 +4,35 @@ import zmq
 
 class WSender:
     def __init__(self, port: str) -> None:
-        self.address = f"tcp://*{port}"
+        self.address = f"tcp://*:{port}"
 
-    def __enter__(self) -> None:
+    def __init_subclass__(cls) -> None:
+        pass
+
+    def __enter__(self):
         class Sender:
-            def __init__(self, address) -> None:
+            def __init__(self, address: str) -> None:
 
                 self.address = address
                 self.context = zmq.Context()
                 self.socket = self.context.socket(zmq.PAIR)
-
+                
                 self.socket.bind(self.address)
 
-        def send(self, message):
-            self.socket.send(message.encode("utf-8"))
+            def send(self, message: str) -> None:
+                self.socket.send(message.encode("UTF-8"))
+
+        self.object = Sender(self.address)
+        return self.object
 
     def __exit__(self, exc_type, exc_value, traceback) -> None:
-        print(exc_type, exc_value, traceback)
+        self.object.send("END_OF_INPUT")
+        
+        self.object.socket.close()
+        self.object.context.destroy()
+
+        if any([exc_type, exc_value, traceback]):
+            print(exc_type, exc_value, traceback)
 
 
 class WUpdater:
@@ -32,7 +44,7 @@ class WUpdater:
             def __init__(self, link: str) -> None:
                 self.link = link
 
-            def update(self):
+            def update(self) -> list[str]:
 
                 data = requests.get(self.link).json()
                 result = []
@@ -49,18 +61,22 @@ class WUpdater:
                 return result
 
         self.object = Updater(self.link)
-
         return self.object
 
     def __exit__(self, exc_type, exc_value, traceback):
-        print(exc_type, exc_value, traceback)
+        if any([exc_type, exc_value, traceback]):
+            print(exc_type, exc_value, traceback)
 
 
 if __name__ == "__main__":
 
     port: str = "4040"
-    link = "https://api.binance.com/api/v3/ticker/price?"
+    link: str = "https://api.binance.com/api/v3/ticker/price?"
 
-    with WUpdater(port) as updater:
-        updater.update()
+    with WUpdater(link) as updater:
+        container = updater.update()
+
+    with WSender(port) as sender:
+        for elem in container:
+            sender.send(elem) 
 

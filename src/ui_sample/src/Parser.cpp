@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-Parser::Parser(std::string &path) : Reader(path)
+TParser::TParser(std::string &path) : TReciever(path)
 {
     std::string name;
     std::string price;
