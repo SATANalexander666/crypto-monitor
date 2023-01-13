@@ -1,0 +1,12 @@
+version: "2.14.2"
+
+services:
+  
+  crypto-monitor:
+
+    build: src/
+
+    command: ./app
+
+    ports:
+      - 4040:4040
