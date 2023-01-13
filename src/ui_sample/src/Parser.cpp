@@ -2,8 +2,12 @@
 
 #include <iostream>
 
-TParser::TParser(std::string &path) : TReciever(path)
+TParser::TParser(){}
+
+void TParser::Parse()
 {
+    this->Listen();
+
     std::string name;
     std::string price;
 
@@ -19,6 +23,4 @@ TParser::TParser(std::string &path) : TReciever(path)
         }
     }
 }
-
-
 

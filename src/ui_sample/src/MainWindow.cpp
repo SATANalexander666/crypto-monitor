@@ -1,8 +1,6 @@
 #include "MainWindow.hpp"
 //#include "LineItem.hpp"
 //#include "ToolBar.hpp"
-#include "Parser.hpp"
-
 
 #include <iostream>
 #include <unistd.h>
@@ -32,9 +30,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     toolBar->addAction(QIcon(trashPix), "Trash");
 
     addToolBar(Qt::LeftToolBarArea, toolBar);
-
-    std::string path = "data.txt";
-    Parser parser(path);
 
     
 

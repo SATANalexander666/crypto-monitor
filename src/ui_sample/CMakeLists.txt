@@ -14,9 +14,8 @@ add_executable(app main.cpp
     #src/LineItem.cpp include/LineItem.hpp
     src/Dispenser.cpp include/Dispenser.hpp
     src/Parser.cpp include/Parser.hpp
-    src/Reader.cpp include/Reader.hpp
-
     src/Reciever.cpp include/Reciever.hpp
+    src/DataManager.cpp include/DataManager.hpp
 )
 
 target_include_directories(app PRIVATE include)

@@ -139,24 +139,10 @@ CMakeFiles/app.dir/src/Parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/Parser.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Parser.cpp -o CMakeFiles/app.dir/src/Parser.cpp.s
 
-CMakeFiles/app.dir/src/Reader.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/src/Reader.cpp.o: /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Reader.cpp
-CMakeFiles/app.dir/src/Reader.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/axr/prog/projects/crypto-monitor/src/ui_sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/app.dir/src/Reader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/Reader.cpp.o -MF CMakeFiles/app.dir/src/Reader.cpp.o.d -o CMakeFiles/app.dir/src/Reader.cpp.o -c /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Reader.cpp
-
-CMakeFiles/app.dir/src/Reader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/Reader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Reader.cpp > CMakeFiles/app.dir/src/Reader.cpp.i
-
-CMakeFiles/app.dir/src/Reader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/Reader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Reader.cpp -o CMakeFiles/app.dir/src/Reader.cpp.s
-
 CMakeFiles/app.dir/src/Reciever.cpp.o: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/src/Reciever.cpp.o: /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Reciever.cpp
 CMakeFiles/app.dir/src/Reciever.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/axr/prog/projects/crypto-monitor/src/ui_sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/app.dir/src/Reciever.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/axr/prog/projects/crypto-monitor/src/ui_sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/app.dir/src/Reciever.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/Reciever.cpp.o -MF CMakeFiles/app.dir/src/Reciever.cpp.o.d -o CMakeFiles/app.dir/src/Reciever.cpp.o -c /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Reciever.cpp
 
 CMakeFiles/app.dir/src/Reciever.cpp.i: cmake_force
@@ -167,6 +153,20 @@ CMakeFiles/app.dir/src/Reciever.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/Reciever.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Reciever.cpp -o CMakeFiles/app.dir/src/Reciever.cpp.s
 
+CMakeFiles/app.dir/src/DataManager.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/DataManager.cpp.o: /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/DataManager.cpp
+CMakeFiles/app.dir/src/DataManager.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/axr/prog/projects/crypto-monitor/src/ui_sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/app.dir/src/DataManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/DataManager.cpp.o -MF CMakeFiles/app.dir/src/DataManager.cpp.o.d -o CMakeFiles/app.dir/src/DataManager.cpp.o -c /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/DataManager.cpp
+
+CMakeFiles/app.dir/src/DataManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/DataManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/DataManager.cpp > CMakeFiles/app.dir/src/DataManager.cpp.i
+
+CMakeFiles/app.dir/src/DataManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/DataManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/DataManager.cpp -o CMakeFiles/app.dir/src/DataManager.cpp.s
+
 # Object files for target app
 app_OBJECTS = \
 "CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.o" \
@@ -174,8 +174,8 @@ app_OBJECTS = \
 "CMakeFiles/app.dir/src/MainWindow.cpp.o" \
 "CMakeFiles/app.dir/src/Dispenser.cpp.o" \
 "CMakeFiles/app.dir/src/Parser.cpp.o" \
-"CMakeFiles/app.dir/src/Reader.cpp.o" \
-"CMakeFiles/app.dir/src/Reciever.cpp.o"
+"CMakeFiles/app.dir/src/Reciever.cpp.o" \
+"CMakeFiles/app.dir/src/DataManager.cpp.o"
 
 # External object files for target app
 app_EXTERNAL_OBJECTS =
@@ -185,8 +185,8 @@ app: CMakeFiles/app.dir/main.cpp.o
 app: CMakeFiles/app.dir/src/MainWindow.cpp.o
 app: CMakeFiles/app.dir/src/Dispenser.cpp.o
 app: CMakeFiles/app.dir/src/Parser.cpp.o
-app: CMakeFiles/app.dir/src/Reader.cpp.o
 app: CMakeFiles/app.dir/src/Reciever.cpp.o
+app: CMakeFiles/app.dir/src/DataManager.cpp.o
 app: CMakeFiles/app.dir/build.make
 app: /usr/lib/libQt6Widgets.so.6.4.1
 app: /usr/lib/libQt6Gui.so.6.4.1

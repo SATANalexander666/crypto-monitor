@@ -16,7 +16,7 @@ class WSender:
                 self.address = address
                 self.context = zmq.Context()
                 self.socket = self.context.socket(zmq.PAIR)
-                
+
                 self.socket.bind(self.address)
 
             def send(self, message: str) -> None:
@@ -27,7 +27,7 @@ class WSender:
 
     def __exit__(self, exc_type, exc_value, traceback) -> None:
         self.object.send("END_OF_INPUT")
-        
+
         self.object.socket.close()
         self.object.context.destroy()
 
@@ -78,5 +78,5 @@ if __name__ == "__main__":
 
     with WSender(port) as sender:
         for elem in container:
-            sender.send(elem) 
+            sender.send(elem)
 

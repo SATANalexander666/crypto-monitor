@@ -190,6 +190,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/DataManager.o: src/DataManager.cpp.o
+.PHONY : src/DataManager.o
+
+# target to build an object file
+src/DataManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/DataManager.cpp.o
+.PHONY : src/DataManager.cpp.o
+
+src/DataManager.i: src/DataManager.cpp.i
+.PHONY : src/DataManager.i
+
+# target to preprocess a source file
+src/DataManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/DataManager.cpp.i
+.PHONY : src/DataManager.cpp.i
+
+src/DataManager.s: src/DataManager.cpp.s
+.PHONY : src/DataManager.s
+
+# target to generate assembly for a file
+src/DataManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/DataManager.cpp.s
+.PHONY : src/DataManager.cpp.s
+
 src/Dispenser.o: src/Dispenser.cpp.o
 .PHONY : src/Dispenser.o
 
@@ -262,30 +286,6 @@ src/Parser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Parser.cpp.s
 .PHONY : src/Parser.cpp.s
 
-src/Reader.o: src/Reader.cpp.o
-.PHONY : src/Reader.o
-
-# target to build an object file
-src/Reader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Reader.cpp.o
-.PHONY : src/Reader.cpp.o
-
-src/Reader.i: src/Reader.cpp.i
-.PHONY : src/Reader.i
-
-# target to preprocess a source file
-src/Reader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Reader.cpp.i
-.PHONY : src/Reader.cpp.i
-
-src/Reader.s: src/Reader.cpp.s
-.PHONY : src/Reader.s
-
-# target to generate assembly for a file
-src/Reader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Reader.cpp.s
-.PHONY : src/Reader.cpp.s
-
 src/Reciever.o: src/Reciever.cpp.o
 .PHONY : src/Reciever.o
 
@@ -326,6 +326,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/DataManager.o"
+	@echo "... src/DataManager.i"
+	@echo "... src/DataManager.s"
 	@echo "... src/Dispenser.o"
 	@echo "... src/Dispenser.i"
 	@echo "... src/Dispenser.s"
@@ -335,9 +338,6 @@ help:
 	@echo "... src/Parser.o"
 	@echo "... src/Parser.i"
 	@echo "... src/Parser.s"
-	@echo "... src/Reader.o"
-	@echo "... src/Reader.i"
-	@echo "... src/Reader.s"
 	@echo "... src/Reciever.o"
 	@echo "... src/Reciever.i"
 	@echo "... src/Reciever.s"

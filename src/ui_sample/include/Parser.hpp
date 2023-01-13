@@ -8,14 +8,17 @@
 #include <sstream>
 
 
-class TParser : protected TReciever
+class TParser : private TReciever
 {
     public:
-        TParser(std::string &path);
+        TParser();
+        void Parse();
         std::pair<std::string, std::string> Get();
 
-    private:
+    protected:
         std::queue< std::pair<std::string, std::string> > parsedData;
+
+    private:
 };
 
 #endif

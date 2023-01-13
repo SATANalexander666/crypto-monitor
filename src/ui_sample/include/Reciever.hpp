@@ -8,11 +8,10 @@
 class TReciever
 {
     public:
-        TReciever(std::string &path);
+        TReciever();
         void Listen();
         ~TReciever();
     private:
-        std::string path;
         zmq::context_t context;
         zmq::socket_t socket;
 

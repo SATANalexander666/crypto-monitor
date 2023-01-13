@@ -2,11 +2,11 @@
 
 #include <QApplication>
 
-#include "Reciever.hpp"
+#include "DataManager.hpp"
 
 int main(int argc, char* argv[])
 {
-    QApplication app(argc, argv);
+    /*QApplication app(argc, argv);
 
     MainWindow window;
 
@@ -15,7 +15,10 @@ int main(int argc, char* argv[])
 
     window.show();
 
-    return app.exec();
+    return app.exec();*/
+
+    TDataManager manager;
+    manager.Update();
 
     return 0;
 }
