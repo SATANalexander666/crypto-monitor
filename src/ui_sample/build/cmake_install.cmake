@@ -1,4 +1,4 @@
-# Install script for directory: /home/axr/prog/projects/OOP/src/ui_sample
+# Install script for directory: /home/axr/prog/projects/crypto-monitor/src/ui_sample
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/axr/prog/projects/OOP/src/ui_sample/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/axr/prog/projects/crypto-monitor/src/ui_sample/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -14,6 +14,9 @@ class MainWindow : public QMainWindow
 
     private slots:
         ;
+
+    private:
+        QToolBar *toolBar;
 };
 
 #endif

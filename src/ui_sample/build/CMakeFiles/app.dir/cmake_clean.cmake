@@ -8,6 +8,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/app.dir/main.cpp.o.d"
   "CMakeFiles/app.dir/src/MainWindow.cpp.o"
   "CMakeFiles/app.dir/src/MainWindow.cpp.o.d"
+  "CMakeFiles/app.dir/src/Parser.cpp.o"
+  "CMakeFiles/app.dir/src/Parser.cpp.o.d"
+  "CMakeFiles/app.dir/src/Reader.cpp.o"
+  "CMakeFiles/app.dir/src/Reader.cpp.o.d"
   "app"
   "app.pdb"
 )

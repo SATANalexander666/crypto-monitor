@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/axr/prog/projects/OOP/src/ui_sample
+CMAKE_SOURCE_DIR = /home/axr/prog/projects/crypto-monitor/src/ui_sample
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/axr/prog/projects/OOP/src/ui_sample/build
+CMAKE_BINARY_DIR = /home/axr/prog/projects/crypto-monitor/src/ui_sample/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/axr/prog/projects/OOP/src/ui_sample/build/CMakeFiles /home/axr/prog/projects/OOP/src/ui_sample/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/axr/prog/projects/crypto-monitor/src/ui_sample/build/CMakeFiles /home/axr/prog/projects/crypto-monitor/src/ui_sample/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/axr/prog/projects/OOP/src/ui_sample/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/axr/prog/projects/crypto-monitor/src/ui_sample/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -214,6 +214,54 @@ src/MainWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/MainWindow.cpp.s
 .PHONY : src/MainWindow.cpp.s
 
+src/Parser.o: src/Parser.cpp.o
+.PHONY : src/Parser.o
+
+# target to build an object file
+src/Parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Parser.cpp.o
+.PHONY : src/Parser.cpp.o
+
+src/Parser.i: src/Parser.cpp.i
+.PHONY : src/Parser.i
+
+# target to preprocess a source file
+src/Parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Parser.cpp.i
+.PHONY : src/Parser.cpp.i
+
+src/Parser.s: src/Parser.cpp.s
+.PHONY : src/Parser.s
+
+# target to generate assembly for a file
+src/Parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Parser.cpp.s
+.PHONY : src/Parser.cpp.s
+
+src/Reader.o: src/Reader.cpp.o
+.PHONY : src/Reader.o
+
+# target to build an object file
+src/Reader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Reader.cpp.o
+.PHONY : src/Reader.cpp.o
+
+src/Reader.i: src/Reader.cpp.i
+.PHONY : src/Reader.i
+
+# target to preprocess a source file
+src/Reader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Reader.cpp.i
+.PHONY : src/Reader.cpp.i
+
+src/Reader.s: src/Reader.cpp.s
+.PHONY : src/Reader.s
+
+# target to generate assembly for a file
+src/Reader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Reader.cpp.s
+.PHONY : src/Reader.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -233,6 +281,12 @@ help:
 	@echo "... src/MainWindow.o"
 	@echo "... src/MainWindow.i"
 	@echo "... src/MainWindow.s"
+	@echo "... src/Parser.o"
+	@echo "... src/Parser.i"
+	@echo "... src/Parser.s"
+	@echo "... src/Reader.o"
+	@echo "... src/Reader.i"
+	@echo "... src/Reader.s"
 .PHONY : help
 
 

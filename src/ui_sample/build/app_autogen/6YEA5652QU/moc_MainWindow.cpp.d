@@ -1,5 +1,5 @@
-/home/axr/prog/projects/OOP/src/ui_sample/build/app_autogen/6YEA5652QU/moc_MainWindow.cpp: /home/axr/prog/projects/OOP/src/ui_sample/include/MainWindow.hpp \
-  /home/axr/prog/projects/OOP/src/ui_sample/build/app_autogen/moc_predefs.h \
+/home/axr/prog/projects/crypto-monitor/src/ui_sample/build/app_autogen/6YEA5652QU/moc_MainWindow.cpp: /home/axr/prog/projects/crypto-monitor/src/ui_sample/include/MainWindow.hpp \
+  /home/axr/prog/projects/crypto-monitor/src/ui_sample/build/app_autogen/moc_predefs.h \
   /usr/include/GL/gl.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \

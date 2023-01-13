@@ -1,7 +1,7 @@
 CMakeFiles/app.dir/main.cpp.o: \
- /home/axr/prog/projects/OOP/src/ui_sample/main.cpp \
+ /home/axr/prog/projects/crypto-monitor/src/ui_sample/main.cpp \
  /usr/include/stdc-predef.h \
- /home/axr/prog/projects/OOP/src/ui_sample/include/MainWindow.hpp \
+ /home/axr/prog/projects/crypto-monitor/src/ui_sample/include/MainWindow.hpp \
  /usr/include/qt6/QtWidgets/QtWidgets \
  /usr/include/qt6/QtWidgets/QtWidgetsDepends \
  /usr/include/qt6/QtCore/QtCore /usr/include/qt6/QtCore/QtCoreDepends \

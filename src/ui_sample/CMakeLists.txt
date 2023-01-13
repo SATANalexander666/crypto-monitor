@@ -10,10 +10,17 @@ qt_standard_project_setup()
 
 add_executable(app main.cpp
     src/MainWindow.cpp include/MainWindow.hpp
+    #src/ToolBar.cpp include/ToolBar.hpp
+    #src/LineItem.cpp include/LineItem.hpp
+    src/Dispenser.cpp include/Dispenser.hpp
+    src/Parser.cpp include/Parser.hpp
+    src/Reader.cpp include/Reader.hpp
 )
 
-target_link_libraries(app PRIVATE Qt6::Widgets)
 target_include_directories(app PRIVATE include)
+
+target_link_libraries(app PRIVATE Qt6::Widgets)
+
 
 set_target_properties(app PROPERTIES
     WIN32_EXECUTABLE ON

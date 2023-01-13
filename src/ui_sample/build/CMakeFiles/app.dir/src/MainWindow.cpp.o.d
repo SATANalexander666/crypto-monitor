@@ -1,7 +1,7 @@
 CMakeFiles/app.dir/src/MainWindow.cpp.o: \
- /home/axr/prog/projects/OOP/src/ui_sample/src/MainWindow.cpp \
+ /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/MainWindow.cpp \
  /usr/include/stdc-predef.h \
- /home/axr/prog/projects/OOP/src/ui_sample/include/MainWindow.hpp \
+ /home/axr/prog/projects/crypto-monitor/src/ui_sample/include/MainWindow.hpp \
  /usr/include/qt6/QtWidgets/QtWidgets \
  /usr/include/qt6/QtWidgets/QtWidgetsDepends \
  /usr/include/qt6/QtCore/QtCore /usr/include/qt6/QtCore/QtCoreDepends \
@@ -904,4 +904,18 @@ CMakeFiles/app.dir/src/MainWindow.cpp.o: \
  /usr/include/qt6/QtWidgets/qwidgetaction.h \
  /usr/include/qt6/QtWidgets/qwizard.h \
  /usr/include/qt6/QtWidgets/qtwidgetsversion.h \
- /usr/include/qt6/QtWidgets/QMainWindow
+ /usr/include/qt6/QtWidgets/QMainWindow \
+ /home/axr/prog/projects/crypto-monitor/src/ui_sample/include/Parser.hpp \
+ /home/axr/prog/projects/crypto-monitor/src/ui_sample/include/Reader.hpp \
+ /usr/include/c++/12.2.0/fstream \
+ /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/12.2.0/bits/fstream.tcc /usr/include/c++/12.2.0/queue \
+ /usr/include/c++/12.2.0/deque /usr/include/c++/12.2.0/bits/stl_deque.h \
+ /usr/include/c++/12.2.0/bits/deque.tcc \
+ /usr/include/c++/12.2.0/bits/stl_queue.h \
+ /usr/include/c++/12.2.0/iostream /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
+ /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h

@@ -1,7 +1,7 @@
 CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.o: \
- /home/axr/prog/projects/OOP/src/ui_sample/build/app_autogen/mocs_compilation.cpp \
+ /home/axr/prog/projects/crypto-monitor/src/ui_sample/build/app_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/axr/prog/projects/OOP/src/ui_sample/build/app_autogen/6YEA5652QU/moc_MainWindow.cpp \
+ /home/axr/prog/projects/crypto-monitor/src/ui_sample/build/app_autogen/6YEA5652QU/moc_MainWindow.cpp \
  /usr/include/c++/12.2.0/memory \
  /usr/include/c++/12.2.0/bits/stl_algobase.h \
  /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -101,7 +101,7 @@ CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/12.2.0/backward/auto_ptr.h \
  /usr/include/c++/12.2.0/pstl/glue_memory_defs.h \
  /usr/include/c++/12.2.0/pstl/execution_defs.h \
- /home/axr/prog/projects/OOP/src/ui_sample/build/app_autogen/6YEA5652QU/../../../include/MainWindow.hpp \
+ /home/axr/prog/projects/crypto-monitor/src/ui_sample/build/app_autogen/6YEA5652QU/../../../include/MainWindow.hpp \
  /usr/include/qt6/QtWidgets/QtWidgets \
  /usr/include/qt6/QtWidgets/QtWidgetsDepends \
  /usr/include/qt6/QtCore/QtCore /usr/include/qt6/QtCore/QtCoreDepends \

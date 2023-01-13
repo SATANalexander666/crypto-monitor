@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/axr/prog/projects/OOP/src/ui_sample
+CMAKE_SOURCE_DIR = /home/axr/prog/projects/crypto-monitor/src/ui_sample
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/axr/prog/projects/OOP/src/ui_sample/build
+CMAKE_BINARY_DIR = /home/axr/prog/projects/crypto-monitor/src/ui_sample/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/app.dir/depend.make
@@ -72,50 +72,80 @@ include CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.o: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.o: app_autogen/mocs_compilation.cpp
 CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/axr/prog/projects/OOP/src/ui_sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.o -MF CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.o -c /home/axr/prog/projects/OOP/src/ui_sample/build/app_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/axr/prog/projects/crypto-monitor/src/ui_sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.o -MF CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.o -c /home/axr/prog/projects/crypto-monitor/src/ui_sample/build/app_autogen/mocs_compilation.cpp
 
 CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/axr/prog/projects/OOP/src/ui_sample/build/app_autogen/mocs_compilation.cpp > CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/axr/prog/projects/crypto-monitor/src/ui_sample/build/app_autogen/mocs_compilation.cpp > CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/axr/prog/projects/OOP/src/ui_sample/build/app_autogen/mocs_compilation.cpp -o CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/axr/prog/projects/crypto-monitor/src/ui_sample/build/app_autogen/mocs_compilation.cpp -o CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/app.dir/main.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/main.cpp.o: /home/axr/prog/projects/OOP/src/ui_sample/main.cpp
+CMakeFiles/app.dir/main.cpp.o: /home/axr/prog/projects/crypto-monitor/src/ui_sample/main.cpp
 CMakeFiles/app.dir/main.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/axr/prog/projects/OOP/src/ui_sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/main.cpp.o -MF CMakeFiles/app.dir/main.cpp.o.d -o CMakeFiles/app.dir/main.cpp.o -c /home/axr/prog/projects/OOP/src/ui_sample/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/axr/prog/projects/crypto-monitor/src/ui_sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/main.cpp.o -MF CMakeFiles/app.dir/main.cpp.o.d -o CMakeFiles/app.dir/main.cpp.o -c /home/axr/prog/projects/crypto-monitor/src/ui_sample/main.cpp
 
 CMakeFiles/app.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/axr/prog/projects/OOP/src/ui_sample/main.cpp > CMakeFiles/app.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/axr/prog/projects/crypto-monitor/src/ui_sample/main.cpp > CMakeFiles/app.dir/main.cpp.i
 
 CMakeFiles/app.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/axr/prog/projects/OOP/src/ui_sample/main.cpp -o CMakeFiles/app.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/axr/prog/projects/crypto-monitor/src/ui_sample/main.cpp -o CMakeFiles/app.dir/main.cpp.s
 
 CMakeFiles/app.dir/src/MainWindow.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/src/MainWindow.cpp.o: /home/axr/prog/projects/OOP/src/ui_sample/src/MainWindow.cpp
+CMakeFiles/app.dir/src/MainWindow.cpp.o: /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/MainWindow.cpp
 CMakeFiles/app.dir/src/MainWindow.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/axr/prog/projects/OOP/src/ui_sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/src/MainWindow.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/MainWindow.cpp.o -MF CMakeFiles/app.dir/src/MainWindow.cpp.o.d -o CMakeFiles/app.dir/src/MainWindow.cpp.o -c /home/axr/prog/projects/OOP/src/ui_sample/src/MainWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/axr/prog/projects/crypto-monitor/src/ui_sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/src/MainWindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/MainWindow.cpp.o -MF CMakeFiles/app.dir/src/MainWindow.cpp.o.d -o CMakeFiles/app.dir/src/MainWindow.cpp.o -c /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/MainWindow.cpp
 
 CMakeFiles/app.dir/src/MainWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/MainWindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/axr/prog/projects/OOP/src/ui_sample/src/MainWindow.cpp > CMakeFiles/app.dir/src/MainWindow.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/MainWindow.cpp > CMakeFiles/app.dir/src/MainWindow.cpp.i
 
 CMakeFiles/app.dir/src/MainWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/MainWindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/axr/prog/projects/OOP/src/ui_sample/src/MainWindow.cpp -o CMakeFiles/app.dir/src/MainWindow.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/MainWindow.cpp -o CMakeFiles/app.dir/src/MainWindow.cpp.s
+
+CMakeFiles/app.dir/src/Parser.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/Parser.cpp.o: /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Parser.cpp
+CMakeFiles/app.dir/src/Parser.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/axr/prog/projects/crypto-monitor/src/ui_sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/app.dir/src/Parser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/Parser.cpp.o -MF CMakeFiles/app.dir/src/Parser.cpp.o.d -o CMakeFiles/app.dir/src/Parser.cpp.o -c /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Parser.cpp
+
+CMakeFiles/app.dir/src/Parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/Parser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Parser.cpp > CMakeFiles/app.dir/src/Parser.cpp.i
+
+CMakeFiles/app.dir/src/Parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/Parser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Parser.cpp -o CMakeFiles/app.dir/src/Parser.cpp.s
+
+CMakeFiles/app.dir/src/Reader.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/Reader.cpp.o: /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Reader.cpp
+CMakeFiles/app.dir/src/Reader.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/axr/prog/projects/crypto-monitor/src/ui_sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/app.dir/src/Reader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/Reader.cpp.o -MF CMakeFiles/app.dir/src/Reader.cpp.o.d -o CMakeFiles/app.dir/src/Reader.cpp.o -c /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Reader.cpp
+
+CMakeFiles/app.dir/src/Reader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/Reader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Reader.cpp > CMakeFiles/app.dir/src/Reader.cpp.i
+
+CMakeFiles/app.dir/src/Reader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/Reader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/axr/prog/projects/crypto-monitor/src/ui_sample/src/Reader.cpp -o CMakeFiles/app.dir/src/Reader.cpp.s
 
 # Object files for target app
 app_OBJECTS = \
 "CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/app.dir/main.cpp.o" \
-"CMakeFiles/app.dir/src/MainWindow.cpp.o"
+"CMakeFiles/app.dir/src/MainWindow.cpp.o" \
+"CMakeFiles/app.dir/src/Parser.cpp.o" \
+"CMakeFiles/app.dir/src/Reader.cpp.o"
 
 # External object files for target app
 app_EXTERNAL_OBJECTS =
@@ -123,6 +153,8 @@ app_EXTERNAL_OBJECTS =
 app: CMakeFiles/app.dir/app_autogen/mocs_compilation.cpp.o
 app: CMakeFiles/app.dir/main.cpp.o
 app: CMakeFiles/app.dir/src/MainWindow.cpp.o
+app: CMakeFiles/app.dir/src/Parser.cpp.o
+app: CMakeFiles/app.dir/src/Reader.cpp.o
 app: CMakeFiles/app.dir/build.make
 app: /usr/lib/libQt6Widgets.so.6.4.1
 app: /usr/lib/libQt6Gui.so.6.4.1
@@ -130,7 +162,7 @@ app: /usr/lib/libQt6Core.so.6.4.1
 app: /usr/lib/libGLX.so
 app: /usr/lib/libOpenGL.so
 app: CMakeFiles/app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/axr/prog/projects/OOP/src/ui_sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/axr/prog/projects/crypto-monitor/src/ui_sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -142,6 +174,6 @@ CMakeFiles/app.dir/clean:
 .PHONY : CMakeFiles/app.dir/clean
 
 CMakeFiles/app.dir/depend:
-	cd /home/axr/prog/projects/OOP/src/ui_sample/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/axr/prog/projects/OOP/src/ui_sample /home/axr/prog/projects/OOP/src/ui_sample /home/axr/prog/projects/OOP/src/ui_sample/build /home/axr/prog/projects/OOP/src/ui_sample/build /home/axr/prog/projects/OOP/src/ui_sample/build/CMakeFiles/app.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/axr/prog/projects/crypto-monitor/src/ui_sample/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/axr/prog/projects/crypto-monitor/src/ui_sample /home/axr/prog/projects/crypto-monitor/src/ui_sample /home/axr/prog/projects/crypto-monitor/src/ui_sample/build /home/axr/prog/projects/crypto-monitor/src/ui_sample/build /home/axr/prog/projects/crypto-monitor/src/ui_sample/build/CMakeFiles/app.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/app.dir/depend
 

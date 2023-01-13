@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/axr/prog/projects/OOP/src/ui_sample
+CMAKE_SOURCE_DIR = /home/axr/prog/projects/crypto-monitor/src/ui_sample
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/axr/prog/projects/OOP/src/ui_sample/build
+CMAKE_BINARY_DIR = /home/axr/prog/projects/crypto-monitor/src/ui_sample/build
 
 # Utility rule file for app_autogen.
 
@@ -67,8 +67,8 @@ include CMakeFiles/app_autogen.dir/compiler_depend.make
 include CMakeFiles/app_autogen.dir/progress.make
 
 CMakeFiles/app_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axr/prog/projects/OOP/src/ui_sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target app"
-	/usr/bin/cmake -E cmake_autogen /home/axr/prog/projects/OOP/src/ui_sample/build/CMakeFiles/app_autogen.dir/AutogenInfo.json ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/axr/prog/projects/crypto-monitor/src/ui_sample/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target app"
+	/usr/bin/cmake -E cmake_autogen /home/axr/prog/projects/crypto-monitor/src/ui_sample/build/CMakeFiles/app_autogen.dir/AutogenInfo.json ""
 
 app_autogen: CMakeFiles/app_autogen
 app_autogen: CMakeFiles/app_autogen.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/app_autogen.dir/clean:
 .PHONY : CMakeFiles/app_autogen.dir/clean
 
 CMakeFiles/app_autogen.dir/depend:
-	cd /home/axr/prog/projects/OOP/src/ui_sample/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/axr/prog/projects/OOP/src/ui_sample /home/axr/prog/projects/OOP/src/ui_sample /home/axr/prog/projects/OOP/src/ui_sample/build /home/axr/prog/projects/OOP/src/ui_sample/build /home/axr/prog/projects/OOP/src/ui_sample/build/CMakeFiles/app_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/axr/prog/projects/crypto-monitor/src/ui_sample/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/axr/prog/projects/crypto-monitor/src/ui_sample /home/axr/prog/projects/crypto-monitor/src/ui_sample /home/axr/prog/projects/crypto-monitor/src/ui_sample/build /home/axr/prog/projects/crypto-monitor/src/ui_sample/build /home/axr/prog/projects/crypto-monitor/src/ui_sample/build/CMakeFiles/app_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/app_autogen.dir/depend
 
