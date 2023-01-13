@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/axr/prog/projects/OOP/src/server_cpp/build",
+  "command": "/usr/bin/c++  -I/home/axr/prog/projects/OOP/src/server_cpp/include  -o CMakeFiles/server.dir/src/server.cpp.o -c /home/axr/prog/projects/OOP/src/server_cpp/src/server.cpp",
+  "file": "/home/axr/prog/projects/OOP/src/server_cpp/src/server.cpp"
+}
+]
