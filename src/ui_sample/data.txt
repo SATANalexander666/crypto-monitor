@@ -1,1 +1,0 @@
-zmq::message_t [size 6922] (... too big to print)

@@ -1,3 +1,0 @@
-/home/axr/prog/projects/OOP/src/server_cpp/build/CMakeFiles/server.dir
-/home/axr/prog/projects/OOP/src/server_cpp/build/CMakeFiles/edit_cache.dir
-/home/axr/prog/projects/OOP/src/server_cpp/build/CMakeFiles/rebuild_cache.dir

@@ -1,9 +1,0 @@
-/home/axr/prog/projects/OOP/graphics/build-crypto-alarm-Desktop-Debug/CMakeFiles/crypto-alarm.dir
-/home/axr/prog/projects/OOP/graphics/build-crypto-alarm-Desktop-Debug/CMakeFiles/edit_cache.dir
-/home/axr/prog/projects/OOP/graphics/build-crypto-alarm-Desktop-Debug/CMakeFiles/rebuild_cache.dir
-/home/axr/prog/projects/OOP/graphics/build-crypto-alarm-Desktop-Debug/CMakeFiles/list_install_components.dir
-/home/axr/prog/projects/OOP/graphics/build-crypto-alarm-Desktop-Debug/CMakeFiles/install.dir
-/home/axr/prog/projects/OOP/graphics/build-crypto-alarm-Desktop-Debug/CMakeFiles/install/local.dir
-/home/axr/prog/projects/OOP/graphics/build-crypto-alarm-Desktop-Debug/CMakeFiles/install/strip.dir
-/home/axr/prog/projects/OOP/graphics/build-crypto-alarm-Desktop-Debug/CMakeFiles/crypto-alarm_autogen_timestamp_deps.dir
-/home/axr/prog/projects/OOP/graphics/build-crypto-alarm-Desktop-Debug/CMakeFiles/crypto-alarm_autogen.dir
