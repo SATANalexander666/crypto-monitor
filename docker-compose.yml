@@ -2,11 +2,11 @@ version: "2.14.2"
 
 services:
   
-  crypto-monitor:
+  server:
 
-    build: src/
+    build: server/
 
-    command: ./app
+    command: python3 ./server.py
 
     ports:
       - 4040:4040
