@@ -10,8 +10,6 @@ qt_standard_project_setup()
 
 add_executable(app main.cpp
     src/MainWindow.cpp include/MainWindow.hpp
-    #src/ToolBar.cpp include/ToolBar.hpp
-    #src/LineItem.cpp include/LineItem.hpp
     src/Parser.cpp include/Parser.hpp
     src/Reciever.cpp include/Reciever.hpp
     src/DataManager.cpp include/DataManager.hpp
