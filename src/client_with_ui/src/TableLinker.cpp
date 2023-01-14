@@ -2,7 +2,9 @@
 
 #include <iostream>
 
-TTableLinker::TTableLinker(){}
+TTableLinker::TTableLinker(){
+    this->SendUpdate();
+}
 
 void TTableLinker::Renew(){
     this->SendUpdate();

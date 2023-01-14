@@ -1,35 +1,30 @@
 #include "Reciever.hpp"
 
 #include <iostream>
-#include <unistd.h>
 
 TReciever::TReciever()
 {
     this->context = zmq::context_t();
-    this->socket = zmq::socket_t(this->context, ZMQ_PAIR);
+    this->socket = zmq::socket_t(this->context, ZMQ_REQ);
     this->socket.connect("tcp://localhost:4040");
 }
 
 void TReciever::Update()
 {
-    int pid = fork();
+    zmq::message_t request, response;
 
-    if (!pid){
-        execl("./Updater", "Updater", NULL);
-    }
-
-    zmq::message_t message;
-    zmq::recv_result_t messageStatus = this->socket.recv(message, zmq::recv_flags::none);
+    zmq::send_result_t requestStatus = this->socket.send(request, zmq::send_flags::none);
+    zmq::recv_result_t responseStatus = this->socket.recv(response, zmq::recv_flags::none);
     
-    int num = std::atoi(message.to_string().data());
+    int num = std::atoi(response.to_string().data());
     this->originalData = std::vector<std::string>(num, std::string());
 
     for (int i = 0; i < num; ++i)
     {
-        zmq::message_t msg;
-        zmq::recv_result_t msgStatus = this->socket.recv(msg, zmq::recv_flags::none);
-        
-        this->originalData[i] = (msg.to_string());
+        responseStatus = this->socket.recv(response, zmq::recv_flags::none);
+        requestStatus = this->socket.send(request, zmq::send_flags::none);
+
+        this->originalData[i] = (response.to_string());
     }
 }
 

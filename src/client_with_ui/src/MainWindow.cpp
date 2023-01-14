@@ -24,7 +24,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 
     toolBar->setOrientation(Qt::Vertical);
     toolBar->setStyleSheet(
-        "border: 0px"
+        "border: 0px; \
+        background-image: url(/home/axr/.cryptomonitor/resources/main.jpg)"
     );
 
     toolBar->addAction(QIcon(searchPix), "Find");
@@ -42,14 +43,15 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     QPalette tablePalette = tableView->palette();
     tablePalette.setBrush(QPalette::Highlight,QBrush(Qt::white));
     tablePalette.setBrush(QPalette::HighlightedText,QBrush(Qt::black));
-    tableView->setPalette(tablePalette);
     
-    tableModel->Renew();
-
+    tableView->setStyleSheet(
+        "background-image: url(/home/axr/.cryptomonitor/resources/main.jpg)"
+    );
+    
     tableView->setModel(tableModel);
     tableView->resizeColumnsToContents();   
     tableView->resizeRowsToContents();
-
+    
     setCentralWidget(tableView);
 }
 
