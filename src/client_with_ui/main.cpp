@@ -10,7 +10,7 @@ int main(int argc, char* argv[])
 
     MainWindow window;
 
-    window.resize(1600, 900);
+    window.resize(600, 900);
     window.setWindowTitle("CryptoMonitor");
 
     window.show();

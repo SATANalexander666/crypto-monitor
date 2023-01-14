@@ -3,15 +3,15 @@
 
 #include "Parser.hpp"
 
-class TDataManager : private TParser
+#include <QVector>
+
+class TDataManager : protected TParser
 {
     public:
         TDataManager();
-        void Update();
 
-        bool empty();
-        std::pair<std::string, std::string> Get();
-     
+    protected:
+        void SendUpdate();
 };
 
 #endif

@@ -1,6 +1,7 @@
 #include "MainWindow.hpp"
 
 #include "DataManager.hpp"
+#include <TableLinker.hpp>
 
 #include <iostream>
 #include <unistd.h>
@@ -14,7 +15,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     //this->setPalette(palette);
 
     
-    
+
+
     toolBar = new QToolBar;
 
     QPixmap searchPix("/home/axr/.cryptomonitor/resources/search.png");
@@ -22,7 +24,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 
     toolBar->setOrientation(Qt::Vertical);
     toolBar->setStyleSheet(
-        "border: 0px"
+        "border: 0px; \
+        background-image: url(/home/axr/.cryptomonitor/resources/main.jpg)"
     );
 
     toolBar->addAction(QIcon(searchPix), "Find");
@@ -34,38 +37,22 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 
 
 
-    TDataManager manager;
-    manager.Update();
-
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-
-    int idx = 0;
-
-    while (!manager.empty())
-    {
-        ++idx;
-
-        std::pair<std::string, std::string> item = manager.Get();
-
-        QHBoxLayout *line = new QHBoxLayout;
-        
-        QCheckBox *checkBox = new QCheckBox;
-        QLabel *index = new QLabel(std::to_string(idx).data());
-        QLabel *name = new QLabel(item.first.data());
-        QLabel *price = new QLabel(item.second.data());
-
-        line->addWidget(checkBox);
-        line->addWidget(index);
-        line->addWidget(name);
-        line->addWidget(price);
-
-        mainLayout->addLayout(line);
-    }
-
-    QWidget *window = new QWidget();
-    window->setLayout(mainLayout);
-
-    setCentralWidget(window);
+    QTableView *tableView = new QTableView;
+    TTableLinker *tableModel = new TTableLinker;
+    
+    QPalette tablePalette = tableView->palette();
+    tablePalette.setBrush(QPalette::Highlight,QBrush(Qt::white));
+    tablePalette.setBrush(QPalette::HighlightedText,QBrush(Qt::black));
+    
+    tableView->setStyleSheet(
+        "background-image: url(/home/axr/.cryptomonitor/resources/main.jpg)"
+    );
+    
+    tableView->setModel(tableModel);
+    tableView->resizeColumnsToContents();   
+    tableView->resizeRowsToContents();
+    
+    setCentralWidget(tableView);
 }
 
 MainWindow::~MainWindow(){
