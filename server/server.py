@@ -4,7 +4,7 @@ import zmq
 
 class WSender:
     def __init__(self, port: str) -> None:
-        print(f'[server] connecting to port - {port}')
+        print(f"[server] connecting to port - {port}")
         self.address = f"tcp://*:{port}"
 
     def __enter__(self):
@@ -91,5 +91,6 @@ def main():
 
             request = sender.recieve()
             sender.send("0")
-                
+
+
 main()
