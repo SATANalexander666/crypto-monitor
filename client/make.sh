@@ -1,4 +1,4 @@
-main_dir="/home/axr/prog/projects/crypto-monitor/src/client_with_ui"
+main_dir="/home/axr/prog/projects/crypto-monitor/client"
 build_dir="${main_dir}/build"
 exec_dir="${main_dir}/executables"
 

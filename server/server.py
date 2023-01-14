@@ -4,10 +4,8 @@ import zmq
 
 class WSender:
     def __init__(self, port: str) -> None:
+        print(f'[server] connecting to port - {port}')
         self.address = f"tcp://*:{port}"
-
-    def __init_subclass__(cls) -> None:
-        pass
 
     def __enter__(self):
         class Sender:
@@ -69,7 +67,7 @@ class WUpdater:
             print(exc_type, exc_value, traceback)
 
 
-if __name__ == "__main__":
+def main():
 
     port: str = "4040"
     link: str = "https://api.binance.com/api/v3/ticker/price?"
@@ -94,3 +92,4 @@ if __name__ == "__main__":
             request = sender.recieve()
             sender.send("0")
                 
+main()
