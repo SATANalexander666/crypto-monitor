@@ -12,15 +12,17 @@ add_executable(app main.cpp
     src/MainWindow.cpp include/MainWindow.hpp
     #src/ToolBar.cpp include/ToolBar.hpp
     #src/LineItem.cpp include/LineItem.hpp
-    src/Dispenser.cpp include/Dispenser.hpp
     src/Parser.cpp include/Parser.hpp
     src/Reciever.cpp include/Reciever.hpp
     src/DataManager.cpp include/DataManager.hpp
+    src/TableModel.cpp include/TableModel.hpp
+    src/TableLinker.cpp include/TableLinker.hpp
 )
 
 target_include_directories(app PRIVATE include)
 
 target_link_libraries(app PRIVATE Qt6::Widgets)
+#target_link_libraries(app PRIVATE Qt6::Sql)
 target_link_libraries(app PRIVATE zmq)
 
 

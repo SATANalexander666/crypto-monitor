@@ -2,19 +2,7 @@
 
 TDataManager::TDataManager() {}
 
-void TDataManager::Update(){
+void TDataManager::SendUpdate(){
     this->Parse();
-}
-
-bool TDataManager::empty(){
-    return this->data.empty();
-}
-
-std::pair<std::string, std::string> TDataManager::Get()
-{
-    std::pair<std::string, std::string> result = this->data.front();
-    this->data.pop();
-
-    return result;
 }
 

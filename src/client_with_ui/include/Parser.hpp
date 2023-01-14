@@ -3,8 +3,8 @@
 
 #include "Reciever.hpp"
 
-#include <string>
-#include <queue>
+#include <QVector>
+#include <QString>
 #include <sstream>
 
 
@@ -15,7 +15,7 @@ class TParser : private TReciever
         void Parse();
 
     protected:
-        std::queue< std::pair<std::string, std::string> > data;
+        QVector< QVector<QString> > table;
 
     private:
 };

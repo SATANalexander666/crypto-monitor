@@ -10,7 +10,7 @@ void TParser::Parse()
 
     std::string name;
     std::string price;
-    this->data = std::queue< std::pair<std::string, std::string> >();
+    this->table.resize(this->originalData.size());
 
     for (int i = 0; i < (int)this->originalData.size(); ++i)
     {
@@ -19,8 +19,13 @@ void TParser::Parse()
         std::getline(strm, name, ' ');
         std::getline(strm, price, ' ');
 
-        if (name.length() && price.length()){
-            this->data.push(std::make_pair(name, price));
+        QString QName = name.data();
+        QString QPrice = price.data();
+
+        if (name.length() && price.length())
+        {
+            this->table[i].append(QName);
+            this->table[i].append(QPrice);
         }
     }
 }
