@@ -1,10 +1,13 @@
 #include "MainWindow.hpp"
 
-#include "DataManager.hpp"
-#include <TableLinker.hpp>
+#include "TableLinker.hpp"
+#include "ListModel.hpp"
 
 #include <iostream>
 #include <unistd.h>
+
+#include <QStringList>
+#include <QAbstractItemModel>
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
@@ -53,6 +56,28 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     tableView->resizeRowsToContents();
     
     setCentralWidget(tableView);
+
+
+
+    /*QStringList numbers;
+    numbers << "One" << "Two" << "Three" << "Four" << "Five";
+
+    QAbstractItemModel *model = new StringListModel(numbers);
+    QListView *view = new QListView;
+
+    view->setWindowTitle("View onto a string list model");
+
+    view->setModel(model);
+
+    model->insertRows(5, 7, QModelIndex());
+
+    for (int row = 5; row < 12; ++row) 
+    {
+        QModelIndex index = model->index(row, 0, QModelIndex());
+        model->setData(index, QString::number(row+1));
+    }
+
+    setCentralWidget(view);*/
 }
 
 MainWindow::~MainWindow(){

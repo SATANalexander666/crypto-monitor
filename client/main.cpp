@@ -1,10 +1,11 @@
-#include "MainWindow.hpp"
+//#include "MainWindow.hpp"
 
+#include "Reciever.hpp"
 #include <QApplication>
 
 int main(int argc, char* argv[])
 {
-    QApplication app(argc, argv);
+    /*QApplication app(argc, argv);
 
     MainWindow window;
 
@@ -13,6 +14,11 @@ int main(int argc, char* argv[])
 
     window.show();
 
-    return app.exec();
+    return app.exec();*/
+
+    TReciever recv;
+    recv.Update();
+
+    return 0;
 }
 

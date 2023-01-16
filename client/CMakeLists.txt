@@ -9,12 +9,13 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets)
 qt_standard_project_setup()
 
 add_executable(app main.cpp
-    src/MainWindow.cpp include/MainWindow.hpp
-    src/Parser.cpp include/Parser.hpp
+    #src/MainWindow.cpp include/MainWindow.hpp
+    #src/Parser.cpp include/Parser.hpp
     src/Reciever.cpp include/Reciever.hpp
-    src/DataManager.cpp include/DataManager.hpp
-    src/TableModel.cpp include/TableModel.hpp
-    src/TableLinker.cpp include/TableLinker.hpp
+    #src/DataManager.cpp include/DataManager.hpp
+    #src/TableModel.cpp include/TableModel.hpp
+    #src/TableLinker.cpp include/TableLinker.hpp
+    #src/ListModel.cpp include/ListModel.hpp
 )
 
 target_include_directories(app PRIVATE include)

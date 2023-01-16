@@ -1,8 +1,8 @@
 #ifndef RECIEVER_HPP
 #define RECIEVER_HPP
 
-#include <string>
-#include <vector>
+#include <QString>
+#include <QVector>
 #include <zmq.hpp>
 
 class TReciever
@@ -16,7 +16,7 @@ class TReciever
         zmq::socket_t socket;
 
     protected:
-        std::vector<std::string> originalData;
+        QVector< QVector<QString> > table;
     
 };
 

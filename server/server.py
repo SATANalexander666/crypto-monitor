@@ -1,5 +1,6 @@
 import requests
 import zmq
+import os
 
 
 class WSender:
@@ -45,17 +46,27 @@ class WUpdater:
 
             def update(self) -> list[str]:
 
+                with open("resources/tokens.txt", "r") as file:
+                    tokens = file.read().split("\n")
+
                 data = requests.get(self.link).json()
                 result = []
 
-                for pair in data:
+                for elem in data:
 
-                    pair_name = pair["symbol"]
-                    pair_price = pair["price"]
+                    name = elem.get("symbol").replace("USDT", "")
 
-                    if pair_name.count("USDT"):
+                    if tokens.count(name) > 0:
 
-                        result.append(f'{pair_name.replace("USDT", "")} {pair_price}')
+                        change_usdt = elem.get("priceChange")
+                        change_percent = elem.get("priceChangePercent")
+                        price = elem.get("lastPrice")
+                        volume = elem.get("volume")
+                        quantity = elem.get("lastQty")
+
+                        result.append(
+                            [name, change_usdt, change_percent, price, volume, quantity]
+                        )
 
                 return result
 
@@ -70,7 +81,10 @@ class WUpdater:
 def main():
 
     port: str = "4040"
-    link: str = "https://api.binance.com/api/v3/ticker/price?"
+    link: str = "https://api.binance.com/api/v3/ticker/24hr"
+
+    with WUpdater(link) as updater:
+        data = updater.update()
 
     with WSender(port) as sender:
         while True:
@@ -84,13 +98,18 @@ def main():
 
             sender.send(str(len(container)))
 
-            for elem in container:
+            request = sender.recieve()
+            sender.send(str(len(container[0])))
 
-                request = sender.recieve()
-                sender.send(elem)
+            for line in container:
+                for elem in line:
+
+                    request = sender.recieve()
+                    sender.send(elem)
 
             request = sender.recieve()
             sender.send("0")
 
 
-main()
+if __name__ == "__main__":
+    main()
