@@ -51,8 +51,6 @@ void TReciever::Update()
 
             requestStatus = this->socket.send(request, zmq::send_flags::none);
         }
-
-        std::cout << '\n';
     }
 
     if (!responseStatus.has_value())
@@ -62,15 +60,6 @@ void TReciever::Update()
     }
 
     responseStatus = this->socket.recv(request, zmq::recv_flags::none);
-
-    for (int i = 0; i < this->table.size(); ++i)
-    {
-        for (int j = 0; j < this->table[i].size(); ++j){
-            std::cout << this->table[i][j].toStdString() << " ";
-        }
-
-        std::cout << std::endl;
-    }
 }
 
 TReciever::~TReciever()

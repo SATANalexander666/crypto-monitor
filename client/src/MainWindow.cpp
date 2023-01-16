@@ -1,13 +1,6 @@
 #include "MainWindow.hpp"
 
-#include "TableLinker.hpp"
-#include "ListModel.hpp"
-
-#include <iostream>
-#include <unistd.h>
-
-#include <QStringList>
-#include <QAbstractItemModel>
+#include "TableBuilder.hpp"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
@@ -15,7 +8,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     
     QPalette palette;
     palette.setBrush(QPalette::Window, mainPix);
-    //this->setPalette(palette);
 
     
 
@@ -40,44 +32,13 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 
 
 
-    QTableView *tableView = new QTableView;
-    TTableLinker *tableModel = new TTableLinker;
+    TTableBuilder *table = new TTableBuilder(this);
     
-    QPalette tablePalette = tableView->palette();
-    tablePalette.setBrush(QPalette::Highlight,QBrush(Qt::white));
-    tablePalette.setBrush(QPalette::HighlightedText,QBrush(Qt::black));
-    
-    tableView->setStyleSheet(
+    table->setStyleSheet(
         "background-image: url(/home/axr/.cryptomonitor/resources/main.jpg)"
-    );
-    
-    tableView->setModel(tableModel);
-    tableView->resizeColumnsToContents();   
-    tableView->resizeRowsToContents();
-    
-    setCentralWidget(tableView);
+    ); 
 
-
-
-    /*QStringList numbers;
-    numbers << "One" << "Two" << "Three" << "Four" << "Five";
-
-    QAbstractItemModel *model = new StringListModel(numbers);
-    QListView *view = new QListView;
-
-    view->setWindowTitle("View onto a string list model");
-
-    view->setModel(model);
-
-    model->insertRows(5, 7, QModelIndex());
-
-    for (int row = 5; row < 12; ++row) 
-    {
-        QModelIndex index = model->index(row, 0, QModelIndex());
-        model->setData(index, QString::number(row+1));
-    }
-
-    setCentralWidget(view);*/
+    setCentralWidget(table);
 }
 
 MainWindow::~MainWindow(){

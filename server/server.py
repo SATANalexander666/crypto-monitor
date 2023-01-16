@@ -58,14 +58,14 @@ class WUpdater:
 
                     if tokens.count(name) > 0:
 
-                        change_usdt = elem.get("priceChange")
-                        change_percent = elem.get("priceChangePercent")
-                        price = elem.get("lastPrice")
-                        volume = elem.get("volume")
-                        quantity = elem.get("lastQty")
+                        price = str(round(float(elem.get("lastPrice")), 3))
+                        change_usdt = str(round(float(elem.get("priceChange")), 3))
+                        change_percent = str(round(float(elem.get("priceChangePercent")), 3))
+                        volume = str(round(float(elem.get("volume")), 3))
+                        quantity = str(round(float(elem.get("lastQty")), 3))
 
                         result.append(
-                            [name, change_usdt, change_percent, price, volume, quantity]
+                            [name, price, change_usdt, change_percent, volume, quantity]
                         )
 
                 return result

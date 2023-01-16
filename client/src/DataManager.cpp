@@ -3,6 +3,6 @@
 TDataManager::TDataManager() {}
 
 void TDataManager::SendUpdate(){
-    this->Parse();
+    this->Update();
 }
 
