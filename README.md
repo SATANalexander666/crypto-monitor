@@ -57,5 +57,11 @@
 
 > Посредством класса `WUpdater` реализован паттерн "proxy".
 
+
+
+https://user-images.githubusercontent.com/91434107/212758406-cf6dd419-6e81-4972-88ad-460463290081.mp4
+
+
+
 ---
 <a href="https://www.flaticon.com/authors/tempo-doloe">Icons created by Tempo_doloe - Flaticon</a>
