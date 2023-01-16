@@ -1,10 +1,6 @@
 #include "MainWindow.hpp"
 
-#include "DataManager.hpp"
-#include <TableLinker.hpp>
-
-#include <iostream>
-#include <unistd.h>
+#include "TableBuilder.hpp"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
@@ -12,7 +8,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     
     QPalette palette;
     palette.setBrush(QPalette::Window, mainPix);
-    //this->setPalette(palette);
 
     
 
@@ -37,22 +32,13 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 
 
 
-    QTableView *tableView = new QTableView;
-    TTableLinker *tableModel = new TTableLinker;
+    TTableBuilder *table = new TTableBuilder(this);
     
-    QPalette tablePalette = tableView->palette();
-    tablePalette.setBrush(QPalette::Highlight,QBrush(Qt::white));
-    tablePalette.setBrush(QPalette::HighlightedText,QBrush(Qt::black));
-    
-    tableView->setStyleSheet(
+    table->setStyleSheet(
         "background-image: url(/home/axr/.cryptomonitor/resources/main.jpg)"
-    );
-    
-    tableView->setModel(tableModel);
-    tableView->resizeColumnsToContents();   
-    tableView->resizeRowsToContents();
-    
-    setCentralWidget(tableView);
+    ); 
+
+    setCentralWidget(table);
 }
 
 MainWindow::~MainWindow(){

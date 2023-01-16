@@ -5,7 +5,7 @@
 
 #include <QVector>
 
-class TDataManager : protected TParser
+class TDataManager : protected TReciever
 {
     public:
         TDataManager();
