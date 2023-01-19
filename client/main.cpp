@@ -8,7 +8,7 @@ int main(int argc, char* argv[])
 
     MainWindow window;
 
-    window.resize(670, 960);
+    window.setWindowState(Qt::WindowMaximized);
     window.setWindowTitle("CryptoMonitor");
 
     window.show();

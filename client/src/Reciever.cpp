@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <unistd.h>
 
 TReciever::TReciever()
 {
@@ -12,6 +13,12 @@ TReciever::TReciever()
 
 void TReciever::RequestUpdate()
 {
+    int pid = fork();
+
+    if (!pid){
+        execl("./server.py", "server.py");
+    }
+
     zmq::message_t request, response;
 
     zmq::send_result_t requestStatus = this->socket.send(request, zmq::send_flags::none);
@@ -57,18 +64,8 @@ void TReciever::RequestUpdate()
             this->table[i][j + 1] = elem;
 
             requestStatus = this->socket.send(request, zmq::send_flags::none);
-        }
-        
-        responseStatus = this->socket.recv(response, zmq::recv_flags::none);
-
-        std::string path = "/home/axr/prog/projects/crypto-monitor/client/resources/" + name + ".png";
-        std::ofstream fout(path);
-
-        fout << response.to_string();
-        fout.close();
-
-        requestStatus = this->socket.send(request, zmq::send_flags::none);
-    }
+        }        
+   }
 
     if (!responseStatus.has_value())
     {

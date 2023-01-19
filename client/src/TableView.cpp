@@ -18,9 +18,9 @@ TTableView::TTableView(QWidget *parent)
     this->setColumnWidth(0, 20);
     this->setFont(QFont("Times", 16));
 
-    this->setStyleSheet(
+    /*this->setStyleSheet(
         "background-image: url(/home/axr/.cryptomonitor/resources/main.jpg)"
-    );
+    );*/
 }
 
 TTableView::~TTableView(){
