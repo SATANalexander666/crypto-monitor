@@ -1,8 +1,6 @@
-main_dir="/home/axr/prog/projects/crypto-monitor/client"
+main_dir="/home/axr/prog/projects/crypto-monitor/server_cpp"
 build_dir="${main_dir}/.build"
-exec_dir="${main_dir}/executables"
 
-#mkdir ${build_dir}
 mkdir ${build_dir}
 cd ${build_dir}
 

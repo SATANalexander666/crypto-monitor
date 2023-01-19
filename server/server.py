@@ -1,6 +1,5 @@
 import requests
 import zmq
-import os
 
 
 class WSender:
@@ -20,6 +19,10 @@ class WSender:
 
             def send(self, message: str) -> None:
                 self.socket.send(message.encode("UTF-8"))
+
+            def send_image(self, image_name:str) -> None:
+                with open(f'resources/data/{image_name}.png', "rb") as file:
+                    self.socket.send(file.read())
 
             def recieve(self) -> str:
                 return self.socket.recv().decode()
@@ -83,13 +86,10 @@ def main():
     port: str = "4040"
     link: str = "https://api.binance.com/api/v3/ticker/24hr"
 
-    with WUpdater(link) as updater:
-        data = updater.update()
-
     with WSender(port) as sender:
         while True:
 
-            request = sender.recieve()
+            sender.recieve()
 
             print("[server] Got request.")
 
@@ -98,16 +98,19 @@ def main():
 
             sender.send(str(len(container)))
 
-            request = sender.recieve()
+            sender.recieve()
             sender.send(str(len(container[0])))
 
             for line in container:
-                for elem in line:
+                for i in range(len(line)):
 
-                    request = sender.recieve()
-                    sender.send(elem)
+                    sender.recieve()
+                    sender.send(line[i])
 
-            request = sender.recieve()
+                sender.recieve()
+                sender.send_image(line[0])
+
+            sender.recieve()
             sender.send("0")
 
 

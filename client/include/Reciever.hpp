@@ -9,8 +9,9 @@ class TReciever
 {
     public:
         TReciever();
-        void Update();
+        void RequestUpdate();
         ~TReciever();
+    
     private:
         zmq::context_t context;
         zmq::socket_t socket;

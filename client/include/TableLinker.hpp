@@ -7,8 +7,9 @@
 class TTableLinker : public TTableModel, private TDataManager
 {
     public:
-        TTableLinker();
+        TTableLinker(QWidget *parent);
         void Renew();
+        int numOfColumns();
 
     private:
         using TTableModel::rowCount;

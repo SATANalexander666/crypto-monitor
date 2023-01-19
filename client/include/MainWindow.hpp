@@ -1,6 +1,10 @@
 #ifndef MAIN_WINDOW_HPP
 #define MAIN WINDOW_HPP
 
+#include "ToolBar.hpp"
+#include "TableView.hpp"
+
+
 #include <QtWidgets>
 #include <QMainWindow>
 
@@ -16,7 +20,8 @@ class MainWindow : public QMainWindow
         ;
 
     private:
-        QToolBar *toolBar;
+        TToolBar *toolBar;
+        TTableView *tableView;
 };
 
 #endif

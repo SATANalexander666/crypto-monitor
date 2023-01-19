@@ -1,6 +1,7 @@
 #include "Reciever.hpp"
 
 #include <iostream>
+#include <fstream>
 
 TReciever::TReciever()
 {
@@ -9,7 +10,7 @@ TReciever::TReciever()
     this->socket.connect("tcp://localhost:4040");
 }
 
-void TReciever::Update()
+void TReciever::RequestUpdate()
 {
     zmq::message_t request, response;
 
@@ -40,17 +41,33 @@ void TReciever::Update()
 
     for (int i = 0; i < numOfLines; ++i)
     {
-        this->table[i].resize(numOfColumns);
+        this->table[i].resize(numOfColumns + 1);
+
+        std::string name;
 
         for (int j = 0; j < numOfColumns; ++j)
         {
             responseStatus = this->socket.recv(response, zmq::recv_flags::none);
 
+            if (j == 0){
+                name = response.to_string();
+            }
+
             QString elem = response.to_string().data();
-            this->table[i][j] = elem;
+            this->table[i][j + 1] = elem;
 
             requestStatus = this->socket.send(request, zmq::send_flags::none);
         }
+        
+        responseStatus = this->socket.recv(response, zmq::recv_flags::none);
+
+        std::string path = "/home/axr/prog/projects/crypto-monitor/client/resources/" + name + ".png";
+        std::ofstream fout(path);
+
+        fout << response.to_string();
+        fout.close();
+
+        requestStatus = this->socket.send(request, zmq::send_flags::none);
     }
 
     if (!responseStatus.has_value())

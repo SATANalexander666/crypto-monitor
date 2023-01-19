@@ -1,9 +1,7 @@
 #ifndef DATA_MANAGER_HPP
 #define DATA_MANAGER_HPP
 
-#include "Parser.hpp"
-
-#include <QVector>
+#include "Reciever.hpp"
 
 class TDataManager : protected TReciever
 {
