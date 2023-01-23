@@ -1,0 +1,4 @@
+/home/axr/prog/projects/crypto-monitor/main/.build/CMakeFiles/app.dir
+/home/axr/prog/projects/crypto-monitor/main/.build/CMakeFiles/edit_cache.dir
+/home/axr/prog/projects/crypto-monitor/main/.build/CMakeFiles/rebuild_cache.dir
+/home/axr/prog/projects/crypto-monitor/main/.build/CMakeFiles/app_autogen.dir
